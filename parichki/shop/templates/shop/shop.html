@@ -1,0 +1,21 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}Каталог{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Каталог</h1>
+    {% if shop %}
+        {% for el in shop %}
+            <div class="">      <!-- можно добавить класс -->
+                <h3>{{ el.name }}</h3>  <!-- НАЗВАНИЕ ПАРИКА -->
+                <img src="{{ el.image.url }}">
+                <h3>{{ el.description }}</h3>   <!-- ОПИСАНИЕ -->
+                <h3>{{ el.price }}</h3> <!-- ЦЕНА -->
+            </div>
+        {% endfor %}
+        {# Комментарий #}
+    {% endif %}
+    </div>
+{% endblock %}

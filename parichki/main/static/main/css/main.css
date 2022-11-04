@@ -1,0 +1,59 @@
+body {
+    background: #f0d1e0;
+}
+
+aside {             /* ШАПКА */
+    float: block-start ;
+    background: #dbadc4;
+    width: 100%;
+    padding: 2.5%;
+    height: 15vh;   /* высота Шапки */
+    color: #fff;
+    border-bottom: 5px solid #feabff;
+}
+
+aside img {         /* ЛОГОТИП */
+    width: 140px;
+    float: left;
+    margin-top: -45px;
+
+}
+
+aside .logo {
+    font-size: 40px;
+    margin-left: 50px;
+    font-weight: bold;
+
+}
+
+aside ul.hr {           /* НАВИГАЦИЯ */
+    margin-left: 600px; /* отступо навигации */
+    padding: 0; /* Значение полей */
+    margin-top: -50px;  /* Высота навигации */
+    list-style: none;
+ }
+
+aside ul.hr li {        /* Панель навигации . каждый элемент */
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 200px; /* Отступ слева */
+    padding: 0; /* Поля вокруг текста */
+    color: #fff;
+    margin-up: 10px;
+    font-size: 28px;
+    float: left;
+    transition: transform .4s ease;
+}
+aside ul.hr li:hover, aside ul a:hover {
+    color: #000000;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+main .features {
+    color: #000000;
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+}
+main .features h1 {font-size: 50px}
+main .features p {max-width: 400px; margin: 20px auto}

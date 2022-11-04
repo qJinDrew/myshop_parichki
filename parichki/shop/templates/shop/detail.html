@@ -1,0 +1,26 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}Подробное описание{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Подробное описание</h1>
+        {% if shop %}
+            {% for el in detail %}
+                <div class="">      <!-- можно добавить класс -->
+                    <h3>{{ el.product }}</h3>
+                    <img src="{{ image.url }}" alt="image">
+                </div>
+                <div class="">
+
+                </div>
+
+            {% endfor %}
+        {% else %}
+            <p>На данный момент товара нет в наличии!</p>
+        {% endif %}
+
+        {# Комментарий #}
+    </div>
+{% endblock %}
